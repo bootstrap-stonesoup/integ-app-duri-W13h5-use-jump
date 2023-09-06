@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-j6y4
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: var_name
+          value: test
+        image: quay.io/bootstrap/integration-e2e-tenant/integ-app-duri/devfile-sample-python-basic-j6y4@sha256:5cc9294d37b3351684f38712a1ae5547a7ae782189aaec11b069a6e2bd51d949
+        name: my-python
+        resources: {}
+status: {}
